@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Countries Spending Trend</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <!-- Banner -->
+	<section id="banner">
+		<h1>Top Countries Expenditures</h1>
+		<p>Military, Health, Education Spending</p>
+  </section><!-- Banner -->
+
+  <!-- menubar -->
+  <div id="menubar">
+    <ul id="menu">
+      <li><a href="index_military.html">Home</a></li>
+      <li><a href="analysis.html">Analysis</a></li>
+      <li class="selected"><a href="trend.html">Trend</a></li>
+       <li><a href="datasource.html">Data Source</a></li>
+    </ul> 
+  </div><!-- menubar -->
+
+  <!-- intro -->  
+  <div class='intro'>
+    <h1>Trend</h1>
+    <h3>Each Country Military, Health and Education Expenditures</h3> 
+  </div><!-- intro -->
+
+  <div class="row">
+    <section class="col-sm-12 col-md-4">
+      <h4>Military Expenditures</h4>
+      <div id="MSColumn_div"></div>
+      <div id="MSColumnFilter_div"></div>
+      <div id="MSColumnControl_div"></div>
+    </section>
+
+    <div class="clearfix visible-md-block"></div>
+    
+    <section class="col-sm-12 col-md-4">
+      <h4>Health Expenditures</h4>
+      <div id="HSColumn_div"></div>
+      <div id="HSColumnFilter_div"></div>
+      <div id="HSColumnControl_div"></div>
+    </section>
+
+    <div class="clearfix visible-md-block"></div>
+    
+    <section class="col-sm-12 col-md-4">
+      <h4>Education Expenditures</h4>
+      <div id="ESColumn_div"></div>
+      <div id="ESColumnFilter_div"></div>
+      <div id="ESColumnControl_div"></div>
+    </section>   
+  </div><!-- row --> 
+
+  <div class="striped-border"></div>
+
+  <div class="row">
+    <section class="col-sm-12 col-md-6">
+      <div class = 'analysiscontent'>
+        <h3>Military</h3>
+      </div>
+    </section>
+
+    <div class="clearfix visible-md-block"></div>
+
+    <section class="col-sm-12 col-md-6">
+      <div id="MSLine_div" style="width: 600px; height: 500px"></div>
+    </section>   
+  </div><!-- row --> 
+
+  <div class="row">
+    <section class="col-sm-12 col-md-6">
+      <div id="MSLineCap_div" style="width: 600px; height: 500px"></div>
+    </section>
+
+    <div class="clearfix visible-md-block"></div>
+  
+    <section class="col-sm-12 col-md-6">
+      <div id="MSLineGDP_div" style="width: 600px; height: 500px"></div>
+    </section>   
+  </div><!-- row --> 
+  
+  <div class="striped-border"></div>
+
+  <div class="row">
+    <section class="col-sm-12 col-md-6">
+      <div class = 'analysiscontent'>
+        <h3>Health</h3>
+      </div>
+    </section>
+
+    <div class="clearfix visible-md-block"></div>
+
+    <section class="col-sm-12 col-md-6">
+      <div id="HSLine_div" style="width: 600px; height: 500px"></div>
+    </section>   
+  </div><!-- row --> 
+
+  <div class="row">
+    <section class="col-sm-12 col-md-6">
+      <div id="HSLineCap_div" style="width: 600px; height: 500px"></div>
+    </section>
+
+    <div class="clearfix visible-md-block"></div>
+    
+    <section class="col-sm-12 col-md-6">
+      <div id="HSLineGDP_div" style="width: 600px; height: 500px"></div>
+    </section>   
+  </div><!-- row -->  
+
+  <div class="striped-border"></div>
+    
+  <div class="row">
+    <section class="col-sm-12 col-md-6">
+      <div class = 'analysiscontent'>
+        <h3>Education</h3>
+      </div>
+    </section>
+
+    <div class="clearfix visible-md-block"></div>
+
+    <section class="col-sm-12 col-md-6">
+      <div id="ESLine_div" style="width: 600px; height: 500px"></div>
+    </section>   
+  </div><!-- row --> 
+
+  <div class="row">
+    <section class="col-sm-12 col-md-6">
+      <div id="ESLineCap_div" style="width: 600px; height: 500px"></div>
+    </section>
+
+    <div class="clearfix visible-md-block"></div>
+  
+    <section class="col-sm-12 col-md-6">
+      <div id="ESLineGDP_div" style="width: 600px; height: 500px"></div>
+    </section>   
+  </div><!-- row -->  
+  
+  <div class="striped-border"></div>
+
+  <div class='intro'>
+    <h3>Observation</h3>
+    <p>
+      The most growing in spending reflect that the GDP of this country is growing since the percent
+      shared GDP are nearly the same especially in military. Another observation is that in 2015, all
+      countries drop in all spending, but the percent spending of GDP are nearly the same. This suggests 
+      that these countries have some huge drop on GDP in 2015 due to some economy event.
+    </p>
+    <h3>Conclusion</h3>
+    <p>
+      France sticks on the highest absolute military spending, but Iran is the most in term of %GDP spending.
+      For Health and Education absolute spending, Germany stay on the top among these countries.
+      But in fact, if speaking of spending per Capita, France and Germany are not extreme as it first see
+      in term absolute spending as there have more population size therefore more total spending.
+    </p>
+    <p>
+      Moreover, most country are the same in the way their give priority to Heath care more than Education and
+      Military which focus the most on their population health. And they also encountered the same GDP
+      problem in 2015.
+    </p>
+  </div>
+  
+  <div class="striped-border"></div>
+</body>
+</html>
