@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Countries Spending Analysis</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- Banner -->
+	<section id="banner">
+		<h1>Top Countries Expenditures</h1>
+		<p>Military, Health, Education Spending</p>
+  </section><!-- Banner -->
+
+  <!-- menubar -->
+  <div id="menubar">
+    <ul id="menu">
+      <li><a href="index_military.html">Home</a></li>
+      <li class="selected"><a href="analysis.html">Analysis</a></li>
+      <li><a href="trend.html">Trend</a></li>
+      <li><a href="datasource.html">Data Source</a></li>
+    </ul> 
+  </div> <!-- menubar --> 
+    
+  <div class='intro'>
+    <h1>Analysis</h1>
+  
+    <h3>Health and Education Spending VS GDP (Per Capita)</h3>
+    <div id="Bubble_div" style="width: 900px; height: 800px"></div>
+
+    <p>
+      There is a positive relationship between all spending and GDP, country with more GDP per Capita 
+      trend to spend more money on Health and Education. Norway has the most average GDP per Capita follow
+      by Sweden. Conversely, Indonesia has the lowest GDP per Capita among this group.
+    </p>
+
+    <div class="striped-border"></div>
+    
+    <h3>Military,Health and Education Spending Porpotion</h3>
+    <div class="row">
+      <section class="col-sm-12 col-md-6">  
+        <h4>Absolute Portion</h4>
+        <div id="StackedBar_div" style="width: 600px; height: 500px"></div>
+      </section>
+
+      <div class="clearfix visible-md-block"></div>
+
+      <section class="col-sm-12 col-md-6">  
+        <h4>Percent Portion</h4>
+        <div id="StackedBarPercent_div" style="width: 600px; height: 500px"></div>
+      </section>
+    </div>
+
+    <p>
+      The proportion chart in percent shows that Health care is the largest expenditure follow by Education
+      and Military. Almost all countries except Indonesia spending on health more than 50% among these three
+      types spending. Besides, just only Indonesia spend on military more than on health. And Iran has
+      the most portion of military which is about 21% among these three while other countries are only
+      around 10%.
+    </p>
+
+    <div class="striped-border"></div>
+
+    <h3>Health and Education Spending Growth</h3>
+    <div class="row">
+      <section class="col-sm-12 col-md-6">
+        <div id="FixedGrowth_div" style="width: 600px; height: 500px"></div>
+      </section>
+
+      <div class="clearfix visible-md-block"></div>
+
+      <section class="col-sm-12 col-md-6">
+        <div id="PercentGrowth_div" style="width: 600px; height: 500px"></div>
+      </section>   
+    </div><!-- row -->   
+
+    <div class="striped-border"></div>
+
+  </div><!-- intro --> 
+</body>
+</html>

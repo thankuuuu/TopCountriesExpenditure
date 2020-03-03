@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Countries Spending Analysis</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!-- Banner -->
+	<section id="banner">
+		<h1>Top Countries Expenditures</h1>
+		<p>Military, Health, Education Spending</p>
+    </section><!-- Banner -->
+
+    <!-- Header -->
+    <div id="menubar">
+        <ul id="menu">
+                <li class="selected"><a href="index_military.html">Home</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                <li><a href="trend.html">Trend</a></li>
+                <li><a href="datasource.html">Data Source</a></li>
+        </ul> 
+    </div>      
+     
+    <div class='intro'>
+        <h1>Top Countries Expenditures Visualization and Analysis</h1>
+        <h3>Overview</h3>
+        <p>Welcome to top countries expenditures visualization and analysis website. This website contains the military, health, education expenditures along with GDP data of 15 countries including some G20 countries from 2010-2015. According to the unavailable data issue and the overabundant expenditures of big countries, this website is not include some top country such as US, China, UK data.</p> 
+        <h3>Purpose</h3>
+        <p>The purpose of ths website is to visualize the data of top countries on their military, health, and education expenditures in more easily understood formatand and try to analyze the pattern and trend of these three kinds of spending.</p> 
+    </div>
+    
+    <!-- content -->    
+    <div id="content">
+        <h3>Mean Education Spending of Top Countries from 2010-2015</h3>
+        <div id="ESOverall_div"></div>
+        <!-- selectbar -->
+        <div id="selectbar" >
+            <a href="index_military.html">Military Spending</a>
+            | <a href="index_health.html">Health Spending</a>
+            | <a href="index_education.html" class="button">Education Spending</a>
+            | <a href="index_gdp.html">GDP</a>
+        </div><!-- selectbar -->
+    </div><!-- content -->
+</body>
+
+</html>
